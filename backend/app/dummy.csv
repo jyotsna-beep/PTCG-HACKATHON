@@ -1,11 +1,16 @@
 ticket id,description,priority,affected_users,support_level,source
-TCKT-200001,Users unable to access VPN after password reset,P2,45,L2,Email
-TCKT-200002,Database connection timeout in production server,P1,120,L3,Monitoring System
-TCKT-200003,Printer not responding in finance department,P4,6,L1,Phone
-TCKT-200004,Multiple failed login attempts detected from external IP,P1,80,L2,SIEM Alert
-TCKT-200005,Feature request for adding export button to dashboard,P3,15,L1,Portal
-TCKT-200006,Network latency observed in east wing office,P2,60,L2,Monitoring System
-TCKT-200007,Application crashing after latest update,P2,25,L3,Email
-TCKT-200008,Subscription cancellation requested by client,P3,3,L1,Chat
-TCKT-200009,Firewall rule misconfiguration causing outage,P1,200,L3,Monitoring System
-TCKT-200010,Shared drive inaccessible for marketing team,P2,35,L2,Phone
+TCKT-300001,Users unable to connect to VPN after recent password reset,P2,45,L2,Email
+TCKT-300002,Database server not responding to application queries,P1,120,L3,Monitoring System
+TCKT-300003,Printer in HR department showing offline status,P4,6,L1,Phone
+TCKT-300004,Multiple failed login attempts detected from unknown IP,P1,80,L2,SIEM Alert
+TCKT-300005,Request to enable export feature in reporting dashboard,P3,15,L1,Portal
+TCKT-300006,Network latency observed across east wing offices,P2,60,L2,Monitoring System
+TCKT-300007,Application crashes when uploading large files,P2,25,L3,Email
+TCKT-300008,Customer requested subscription cancellation,P3,3,L1,Chat
+TCKT-300009,Firewall misconfiguration causing partial outage,P1,200,L3,Monitoring System
+TCKT-300010,Shared drive inaccessible for marketing team,P2,35,L2,Phone
+TCKT-300011,Security alert triggered due to abnormal outbound traffic,P1,150,L3,SIEM Alert
+TCKT-300012,Password reset request for locked Salesforce account,P3,5,L1,Portal
+TCKT-300013,Email not syncing on mobile devices,P3,18,L2,Chat
+TCKT-300014,API integration failing with external payment service,P2,40,L3,Monitoring System
+TCKT-300015,Refund requested due to duplicate billing issue,P3,4,L1,Email
