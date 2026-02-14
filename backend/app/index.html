@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI ITSM Test Upload</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 40px;
+            background: #f4f4f4;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        pre {
+            background: #000;
+            color: #00ff00;
+            padding: 20px;
+            overflow-x: auto;
+            max-height: 400px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Upload ITSM Dataset (CSV)</h2>
+
+<input type="file" id="fileInput" />
+<br>
+<button onclick="uploadFile()">Upload</button>
+
+<h3>JSON Output:</h3>
+<pre id="output"></pre>
+
+<script>
+async function uploadFile() {
+
+    const fileInput = document.getElementById("fileInput");
+    const file = fileInput.files[0];
+
+    if (!file) {
+        alert("Please select a file first!");
+        return;
+    }
+
+    const formData = new FormData();
+    formData.append("file", file);
+
+    try {
+        const response = await fetch("http://127.0.0.1:8000/upload-dataset", {
+            method: "POST",
+            body: formData
+        });
+
+        const data = await response.json();
+
+        document.getElementById("output").textContent =
+            JSON.stringify(data, null, 2);
+
+    } catch (error) {
+        console.error("Error:", error);
+        alert("Error uploading file.");
+    }
+}
+</script>
+
+</body>
+</html>
